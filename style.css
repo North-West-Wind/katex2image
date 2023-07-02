@@ -29,6 +29,7 @@ textarea {
 	display: block;
 	margin: auto;
 	font-size: 2vh;
+	resize: none;
 }
 
 .background {
