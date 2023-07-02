@@ -1,0 +1,98 @@
+body {
+	margin: 0;
+	font-size: 3vh;
+}
+
+.header {
+	width: max-content;
+	height: 10vh;
+	position: fixed;
+	padding: 1vh;
+	font-size: 4vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.section {
+	margin-top: 12vh;
+	float: left;
+	width: 50vw;
+	height: 88vh;
+}
+
+textarea {
+	position: relative;
+	width: 90%;
+	height: 90%;
+	display: block;
+	margin: auto;
+	font-size: 2vh;
+}
+
+.background {
+	position: relative;
+	width: 90%;
+	display: block;
+	margin: auto;
+	font-size: 2vh;
+}
+
+.background input {
+	width: 100%;
+	font-size: 2vh;
+}
+
+#result {
+	width: fit-content;
+	height: fit-content;
+}
+
+#info-button {
+	position: fixed;
+	right: 1vh;
+	font-size: 4vh;
+	height: 10vh;
+	position: fixed;
+	padding: 1vh;
+	font-size: 4vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+#info-button:hover {
+	cursor: pointer;
+}
+
+#info {
+	position: fixed;
+	width: 75%;
+	height: fit-content;
+	background-color: white;
+	color: black;
+	border-style: solid;
+	border-width: 1vw;
+	border-radius: 1vw;
+	border-color: darkgray;
+	padding: 2vw;
+	z-index: 1000;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.no-select {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
