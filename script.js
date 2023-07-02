@@ -1,7 +1,12 @@
+var defaultBg = "ffffff";
+
 var lastInput = "";
 var lastBg = "ffffff";
 
 window.onload = () => {
+	if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) defaultBg = "242424";
+	document.getElementById("bg").placeholder = defaultBg;
+
 	const element = document.getElementById("result");
 	
 	setInterval(() => {
@@ -14,7 +19,7 @@ window.onload = () => {
 			});
 		}
 	
-		const bg = document.getElementById("bg").value;
+		const bg = document.getElementById("bg").value || defaultBg;
 		if (lastBg != bg) {
 			lastBg = bg;
 			const color = tinycolor(bg);
@@ -24,6 +29,7 @@ window.onload = () => {
 				setFgBg(document.body, color);
 				setFgBg(document.getElementById("input"), color);
 				setFgBg(document.getElementById("bg"), color);
+				setFgBg(document.getElementById("info"), color);
 			}
 		}
 	}, 1000);
