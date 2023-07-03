@@ -5,7 +5,7 @@ var lastBg = "ffffff";
 
 window.onload = () => {
 	if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) defaultBg = "242424";
-	document.getElementById("bg").placeholder = defaultBg;
+	document.getElementById("bg").value = defaultBg;
 
 	const element = document.getElementById("result");
 	
